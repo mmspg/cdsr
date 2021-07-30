@@ -1,2 +1,5 @@
-# compressed_domain_sr
-Towards super resolution in the compressed domain of learning-based image codecs
+# Towards super resolution in the compressed domain of learning-based image codecs
+
+This is a source code repository for the paper "Towards super resolution in the compressed domain of learning-based image codecs".
+
+**The implementation and instructions will be coming soon.**
