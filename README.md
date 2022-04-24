@@ -36,13 +36,24 @@ sudo docker run --ipc=host --gpus all --rm -it \
 
 ## Testing
 
-Download pretrained models `pretrained_model.tgz` (link to be added).
+The pretrained models and test dataset can be downloaded from the following **FTP** by using dedicated FTP clients, such as FileZilla or FireFTP (we recommend to use [FileZilla](https://filezilla-project.org/)):
+
+```
+Protocol: FTP
+FTP address: tremplin.epfl.ch
+Username: datasets@mmspgdata.epfl.ch
+Password: ohsh9jah4T
+FTP port: 21
+```
+
+Download pretrained models `pretrained_model.tgz` from the cdsr folder in the FTP server.
 Extract files:
+
 ```
 tar -xzf pretrained_model.tgz
 ```
 
-Download the test dataset `jpegai.tgz` (link to be added).
+Download the test dataset `jpegai.tgz` from the cdsr folder in the FTP server.
 Extract the files from `jpegai.tgz` to the `datasets` folder:
 ```
 mkdir datasets
