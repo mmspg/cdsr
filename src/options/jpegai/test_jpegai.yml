@@ -1,0 +1,28 @@
+name: jpegai_r3
+suffix: ~  # add suffix to saved images
+model: srgan
+distortion: sr
+scale: 4
+crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
+gpu_ids: [0]
+compression_quality: 3
+
+datasets:
+  test: 
+    name: JPEGAI
+    mode: LR
+    dataroot_LR: ../datasets/jpegai/downsample4x/
+
+#### network structures
+network_G:
+  which_model_G: RRDBNet
+  in_nc: 3
+  out_nc: 3
+  nf: 64
+  nb: 23
+  upscale: 4
+
+#### path
+path:
+  out_path: ../results/jpegai_r3/
+  pretrain_model_G: ../pretrained_model/model3.pth

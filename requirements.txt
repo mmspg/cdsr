@@ -1,0 +1,14 @@
+torch==1.8.1
+torchvision==0.9.1
+opencv-python
+lmdb
+Pillow
+compressai
+tqdm
+jupyterlab
+lpips
+matplotlib
+numpy
+pytorch-msssim
+tensorboard
+future
